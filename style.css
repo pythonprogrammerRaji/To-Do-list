@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    
+   
+}
+.todo-List{
+    background-color: #fff;
+    width: 400px;
+    min-width: 500px;
+    border-radius: 20px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 40px;
+    
+}
+
+.todo-List h2{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+.todo-List h2 img{
+    width: 40px;
+    margin-left: 10px;  
+   
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+input{
+    flex: 1;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 1rem;
+    background-color: transparent;
+}
+input:hover{
+    background-color: rgba(232, 232, 232, 0.542);
+    
+}
+button{
+    padding: 16px 30px;
+    border-radius: 40px;
+    background-color: rgba(167, 42, 144, 0.821);
+    width: 100px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 19px 50px;
+    cursor: pointer;
+    position: relative;
+    /* margin-top: 10px; */
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    background-image: url(./images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 10px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+   
+
+}
+ul li span:hover{
+    background-color: #bbb0b0;
+    border-radius: 20px;
+   
+   
+
+
+}
